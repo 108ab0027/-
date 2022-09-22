@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Emovest</title>
+  <style type="text/css">
+    h1 {
+      color: rgb(150, 148, 148);
+      font-family: 微軟正黑體;
+      font-size: 200%;
+      text-align: center
+    }
+
+    body {
+      background-color: rgb(187, 223, 234)
+    }
+
+    [class] {
+      color: rgb(148, 145, 145);
+      font-size: 150%;
+      font-family: 微軟正黑體
+    }
+
+    div {
+      float: left;
+      width: 250px;
+      height: 550px;
+      background-color: aliceblue;
+      padding: 5px
+    }
+
+    p.darkmode {
+      color: rgb(148, 145, 145);
+      font-size: 150%;
+      font-family: 微軟正黑體
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      top: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked+.slider {
+      background-color: green;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <h1>市場行情</h1>
+  </header>
+  <div>
+    <nav>
+      <u1>
+        <li><a href="function1.html" class="emotion">情緒儀表板</a></li>
+        <li><a href="function2.html" class="market">市場行情</a></li>
+        <li><a href="function3.html" class="invest">投資績效計算</a></li>
+        <li><a href="function4.html" class="setting">設定</a></li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li><a href="function5.html" class="login">login with wallet</a></li>
+      </u1>
+
+      <p class="darkmode"><span>深色模式</span>
+
+      <div class="py-3 d-flex justify-content-center">
+
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      </p>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
